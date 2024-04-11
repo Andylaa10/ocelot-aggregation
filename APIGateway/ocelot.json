@@ -1,0 +1,244 @@
+﻿{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5206"
+  },
+  "Routes": [
+    {
+      "//InventoryService": "InventoryService",
+      "UpstreamPathTemplate": "/api/Inventory",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/Inventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "InventoryService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "Key": "GetInventories",
+      "UpstreamPathTemplate": "/api/Inventory",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/Inventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "InventoryService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "Key": "GetInventoryById",
+      "UpstreamPathTemplate": "/api/Inventory/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/Inventory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "InventoryService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Inventory/{id}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ],
+      "DownstreamPathTemplate": "/api/Inventory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "InventoryService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Inventory/{id}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/Inventory/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "InventoryService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "//OrderService": "OrderService",
+      "UpstreamPathTemplate": "/api/Order",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "Key": "GetOrders",
+      "UpstreamPathTemplate": "/api/Order",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Order/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/Order/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Order/{id}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ],
+      "DownstreamPathTemplate": "/api/Order/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Order/{id}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/Order/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "//ProductCatalogService": "ProductCatalogService",
+      "UpstreamPathTemplate": "/api/ProductCatalog",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/ProductCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ProductCatalogService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "Key": "GetProductCatalogs",
+      "UpstreamPathTemplate": "/api/ProductCatalog",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/ProductCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ProductCatalogService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "Key": "GetProductCatalogById",
+      "UpstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ProductCatalogService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ],
+      "DownstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ProductCatalogService",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/ProductCatalog/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ProductCatalogService",
+          "Port": 80
+        }
+      ]
+    }
+  ],
+  "Aggregates": [
+    {
+      "//GetAllLists": "GetAllLists",
+      "UpstreamPathTemplate": "/api/status",
+      "RouteKeys": [
+        "GetInventories",
+        "GetOrders",
+        "GetProductCatalogs"
+      ]
+    },
+    {
+      "//ProductCatalogInventory": "ProductCatalogInventory",
+      "UpstreamPathTemplate": "/api/PCI/{id}",
+      "RouteKeys": [
+        "GetInventoryById",
+        "GetProductCatalogById"
+      ]
+    }
+  ]
+}

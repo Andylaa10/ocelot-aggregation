@@ -1,0 +1,37 @@
+﻿version: '3.9'
+services:
+  APIGateway:
+    image: apigateway
+    build:
+      context: .
+      dockerfile: APIGateway/Dockerfile
+    ports:
+      - '5206:80'
+  InventoryService:
+    image: inventoryservice
+    build:
+      context: .
+      dockerfile: InventoryService/Dockerfile
+    ports:
+      - '9090:80'
+    depends_on:
+      - APIGateway
+  OrderService:
+    image: orderservice
+    build:
+      context: .
+      dockerfile: OrderService/Dockerfile
+    ports:
+      - '9091:80'
+    depends_on:
+      - APIGateway
+  ProductCatalogService:
+    image: productcatalogservice
+    build:
+      context: .
+      dockerfile: ProductCatalogService/Dockerfile
+    ports:
+      - '9092:80'
+    depends_on:
+      - APIGateway
+  
